@@ -4,7 +4,7 @@ $computerGuess = rand (0,100);
 
 do {
 	
-	fwrite(STDOUT, "Guess a number".PHP_EOL);
+	fwrite(STDOUT, "Guess a number: ".PHP_EOL);
 
 	$userGuess = fgets(STDIN);
 	
