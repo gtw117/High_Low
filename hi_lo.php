@@ -1,23 +1,23 @@
 <?php
 
-$computerGuess = rand (0,100);
+$computer = rand (0,100);
 
 do {
 	
 	fwrite(STDOUT, "Guess a number: ".PHP_EOL);
 
-	$userGuess = fgets(STDIN);
+	$user = fgets(STDIN);
 	
-	if($userGuess == $computerGuess){
+	if($user == $computer){
 		echo ("GOOD GUESS").PHP_EOL;
 		break;
 	} 
-	if ($userGuess < $computerGuess){
+	if ($user < $computer){
 		echo ("HIGHER").PHP_EOL;
 		continue;
 	}
-	if ($userGuess > $computerGuess){
+	if ($user > $computer){
 		echo ("LOWER").PHP_EOL;
 		continue;
 	}
-} while ($userGuess != $computerGuess);
+} while ($user != $computer);
