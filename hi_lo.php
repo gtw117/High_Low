@@ -3,7 +3,7 @@ $firstNum = $argv[1];
 $secondNum = $argv[2];
 
 if(sizeof($argv) < 3){
-	fwrite(STDERR, "Not enough arguments, please guess a number between 0-100.".PHP_EOL);
+	fwrite(STDERR, "Not enough arguments.".PHP_EOL);
 	$firstNum = 1;
 	$secondNum = 100;
 }
@@ -18,6 +18,8 @@ do{
 		$secondNum = trim(fgets(STDIN));
 	}
 } while (!is_numeric($firstNum) || !is_numeric($secondNum));
+
+echo "please choose a number between $firstNum and $secondNum.".PHP_EOL;
 
 $computer = rand($firstNum, $secondNum);
 
