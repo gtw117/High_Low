@@ -1,6 +1,6 @@
 <?php
 
-$computer = rand (0,100);
+$computer = mt_rand(0,100);
 
 do {
 	
