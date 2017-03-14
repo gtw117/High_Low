@@ -1,6 +1,11 @@
 <?php
 
-$computer = mt_rand(0,100);
+if ($argc == 1){
+	$computer = mt_rand(0,100);
+} else {
+	$computer = mt_rand($argv[1], $argv[2]);
+}
+
 
 do {
 	
