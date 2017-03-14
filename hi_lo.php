@@ -3,7 +3,7 @@ $firstNum = $argv[1];
 $secondNum = $argv[2];
 
 if(sizeof($argv) < 3){
-	fwrite(STDERR, "Not enough arguments, please guess a number between 0-100").PHP_EOL;
+	fwrite(STDERR, "Not enough arguments, please guess a number between 0-100.".PHP_EOL);
 	$firstNum = 1;
 	$secondNum = 100;
 }
